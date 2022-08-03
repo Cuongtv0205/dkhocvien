@@ -4,84 +4,207 @@
     <meta charset="UTF-8">
     <title>Form lấy survey khách hàng</title>
     <style>
-        tr{
-            text-align: center;
-        }
+      .den{
+          background: Black;
+      }
+      .do{
+          background-color: red;
+      }
+      table{
+          width: 500px;
+          height: 500px;
+      }
     </style>
 </head>
 <body>
-<div>
-    <form action="https://www.google.com.vn/search">
-        <hr>
-        <h2>Market Research Survey</h2>
-        <p>Please take a few moments to complete this satisfaction survey</p>
-        <form>
-            <h3>What is your age range?</h3>
-            <input type="text" placeholder="18 - 14">
-            <select>
-                <option>18 - 24</option>
-                <option>25 - 35</option>
-                <option>36 - 55</option>
-            </select>
-            <h3> What is your yearly income range?</h3>
-            <input type="text" placeholder="$0 - $25,000">
-            <select>
-                <option>$0 - $25,000</option>
-                <option>$26,000 - $80,000</option>
-                <option>$81,000 - $150,000</option>
-            </select>
-            <h3>Gender</h3>
-            <input type="radio" name="Male">Male<br>
-            <input type="radio" name="Male">Female <br>
-            <h3>Which of following products have in the last 2 months.Please check all that aplly</h3>
-            <input type="checkbox" name="Products 1">Products 1 <br>
-            <input type="checkbox" name="Products 2">Products 2 <br>
-            <input type="checkbox" name="Products 3">Products 3 <br>
-            <h3>How often would you use our new product? </h3>
-            <input type="radio" name="Daily">Daily<br>
-            <input type="radio" name="Daily">Weekly<br>
-            <input type="radio" name="Daily">Monthly <br>
-            <h3>What would you pay for the new product?</h3>
-            $<input type="text">Dollars.
-            <input type="text" size="1">Cents
-            <h3> What features would you like to see in the new product.</h3>
-            <textarea cols="30" rows="10"></textarea><br>
-            <p>Please rate your level of agreement with the following statements.</p>
-        </form>
- </div>
-<div>
-    <table border="1">
-        <tr>
-            <th></th>
-            <th>Strongly Disagree</th>
-            <th>Disagree</th>
-            <th>Agree</th>
-            <th>Strongly Agree</th>
-        </tr>
-        <tr>
-            <td> Our products are priced fairly</td>
-            <td><input type="radio"> <br>1</td>
-            <td><input type="radio"> <br>2</td>
-            <td><input type="radio"> <br>3</td>
-            <td><input type="radio"> <br>4</td>
-        </tr>
-        <tr>
-            <td> Our products are high fairly</td>
-            <td><input type="radio"> <br>1</td>
-            <td><input type="radio"> <br>2</td>
-            <td><input type="radio"> <br>3</td>
-            <td><input type="radio"> <br>4</td>
-        </tr>
-        <tr>
-            <td> You would recommend our product to a friend or coworker</td>
-            <td><input type="radio"> <br>1</td>
-            <td><input type="radio"> <br>2</td>
-            <td><input type="radio"> <br>3</td>
-            <td><input type="radio"> <br>4</td>
-        </tr>
-    </table>
-    <button>Submit</button>
-</div>
-</form>
+<!--<div>-->
+<!--    <form action="https://www.google.com.vn/search">-->
+<!--        <hr>-->
+<!--        <h2>Market Research Survey</h2>-->
+<!--        <p>Please take a few moments to complete this satisfaction survey</p>-->
+<!--        <form>-->
+<!--            <h3>What is your age range?</h3>-->
+<!--            <input type="text" placeholder="18 - 14">-->
+<!--            <select>-->
+<!--                <option>18 - 24</option>-->
+<!--                <option>25 - 35</option>-->
+<!--                <option>36 - 55</option>-->
+<!--            </select>-->
+<!--            <h3> What is your yearly income range?</h3>-->
+<!--            <input type="text" placeholder="$0 - $25,000">-->
+<!--            <select>-->
+<!--                <option>$0 - $25,000</option>-->
+<!--                <option>$26,000 - $80,000</option>-->
+<!--                <option>$81,000 - $150,000</option>-->
+<!--            </select>-->
+<!--            <h3>Gender</h3>-->
+<!--            <input type="radio" name="Male">Male<br>-->
+<!--            <input type="radio" name="Male">Female <br>-->
+<!--            <h3>Which of following products have in the last 2 months.Please check all that aplly</h3>-->
+<!--            <input type="checkbox" name="Products 1">Products 1 <br>-->
+<!--            <input type="checkbox" name="Products 2">Products 2 <br>-->
+<!--            <input type="checkbox" name="Products 3">Products 3 <br>-->
+<!--            <h3>How often would you use our new product? </h3>-->
+<!--            <input type="radio" name="Daily">Daily<br>-->
+<!--            <input type="radio" name="Daily">Weekly<br>-->
+<!--            <input type="radio" name="Daily">Monthly <br>-->
+<!--            <h3>What would you pay for the new product?</h3>-->
+<!--            $<input type="text">Dollars.-->
+<!--            <input type="text" size="1">Cents-->
+<!--            <h3> What features would you like to see in the new product.</h3>-->
+<!--            <textarea cols="30" rows="10"></textarea><br>-->
+<!--            <p>Please rate your level of agreement with the following statements.</p>-->
+<!--        </form>-->
+<!-- </div>-->
+<!--<div>-->
+<!--    <table border="1">-->
+<!--        <tr>-->
+<!--            <th></th>-->
+<!--            <th>Strongly Disagree</th>-->
+<!--            <th>Disagree</th>-->
+<!--            <th>Agree</th>-->
+<!--            <th>Strongly Agree</th>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td> Our products are priced fairly</td>-->
+<!--            <td><input type="radio"> <br>1</td>-->
+<!--            <td><input type="radio"> <br>2</td>-->
+<!--            <td><input type="radio"> <br>3</td>-->
+<!--            <td><input type="radio"> <br>4</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td> Our products are high fairly</td>-->
+<!--            <td><input type="radio"> <br>1</td>-->
+<!--            <td><input type="radio"> <br>2</td>-->
+<!--            <td><input type="radio"> <br>3</td>-->
+<!--            <td><input type="radio"> <br>4</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td> You would recommend our product to a friend or coworker</td>-->
+<!--            <td><input type="radio"> <br>1</td>-->
+<!--            <td><input type="radio"> <br>2</td>-->
+<!--            <td><input type="radio"> <br>3</td>-->
+<!--            <td><input type="radio"> <br>4</td>-->
+<!--        </tr>-->
+<!--    </table>-->
+<!--    <button>Submit</button>-->
+<!--</div>-->
+<!--</form>-->
+<!---Giao diện form dk người dùng -->
+<!--<form action=" http://demo.codegym.vn/6/registration_form/register.php">-->
+<!--    <h3> Họ Tên :</h3>-->
+<!--    <input type="text"><br>-->
+<!--    <h3> Email :</h3>-->
+<!--    <input type="text"><br>-->
+<!--    <h3> Số Điện Thoại :</h3>-->
+<!--    <input type="text"><br>-->
+<!--    <h3> Giới Tính </h3>-->
+<!--    <input type="radio" name="Nam">Nam-->
+<!--    <input type="radio"name="Nam"> Nữ<br>-->
+<!--    <button>Đăng Ký</button>-->
+<!--</form>-->
+<table style="background-color: yellow">
+    <tr>
+        <th>  </th>
+        <th> 1 </th>
+        <th> 2 </th>
+        <th> 3 </th>
+        <th> 4 </th>
+        <th> 5 </th>
+        <th> 6 </th>
+        <th> 7 </th>
+        <th> 8 </th>
+
+    </tr>
+    <tr>
+        <td> A </td>
+        <td class="do"></td>
+        <td class="den"></td>
+        <td class="do"></td>
+        <td class="den" ></td>
+        <td class="do"></td>
+        <td class="den"></td>
+        <td class="do"></td>
+        <td class="den"></td>
+    </tr>
+    <tr>
+        <td> B </td>
+        <td class="den"></td>
+        <td class="do"></td>
+        <td class="den"></td>
+        <td class="do"></td>
+        <td class="den"></td>
+        <td class="do"></td>
+        <td class="den"></td>
+        <td class="do"></td>
+
+    </tr>
+    <tr>
+        <td> C </td>
+        <td class="do"></td>
+        <td class="den"></td>
+        <td class="do"></td>
+        <td class="den" ></td>
+        <td class="do"></td>
+        <td class="den"></td>
+        <td class="do"></td>
+        <td class="den"></td>
+    </tr>
+    <tr>
+        <td> D </td>
+        <td class="den"></td>
+        <td class="do"></td>
+        <td class="den"></td>
+        <td class="do"></td>
+        <td class="den"></td>
+        <td class="do"></td>
+        <td class="den"></td>
+        <td class="do"></td>
+    </tr>
+    <tr>
+        <td> E </td>
+        <td class="do"></td>
+        <td class="den"></td>
+        <td class="do"></td>
+        <td class="den" ></td>
+        <td class="do"></td>
+        <td class="den"></td>
+        <td class="do"></td>
+        <td class="den"></td>
+    </tr>
+    <tr>
+        <td> F </td>
+        <td class="den"></td>
+        <td class="do"></td>
+        <td class="den"></td>
+        <td class="do"></td>
+        <td class="den"></td>
+        <td class="do"></td>
+        <td class="den"></td>
+        <td class="do"></td>
+    </tr>
+    <tr>
+        <td> G </td>
+        <td class="do"></td>
+        <td class="den"></td>
+        <td class="do"></td>
+        <td class="den" ></td>
+        <td class="do"></td>
+        <td class="den"></td>
+        <td class="do"></td>
+        <td class="den"></td>
+    </tr>
+    <tr>
+        <td> H </td>
+        <td class="den"></td>
+        <td class="do"></td>
+        <td class="den"></td>
+        <td class="do"></td>
+        <td class="den"></td>
+        <td class="do"></td>
+        <td class="den"></td>
+        <td class="do"></td>
+    </tr>
+</table>
 </body>
 </html>
